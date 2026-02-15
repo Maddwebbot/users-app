@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://your-backend.up.railway.app/users")
+    fetch("https://users-app-production-3930.up.railway.app/users")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
